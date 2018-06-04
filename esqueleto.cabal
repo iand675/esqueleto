@@ -1,11 +1,11 @@
--- This file has been generated from package.yaml by hpack version 0.20.0.
+-- This file has been generated from package.yaml by hpack version 0.28.2.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 34b1b8836c9ae7acb038d0e808674ddb4c2ab696d37e5b117f61acad02ed6daf
+-- hash: e7b8ea5821ba1250fe77f6521fedfb1559bb00b4bddb9842cea16d533839a623
 
 name:           esqueleto
-version:        2.6.0
+version:        2.6.1
 synopsis:       Type-safe EDSL for SQL queries on persistent backends.
 description:    @esqueleto@ is a bare bones, type-safe EDSL for SQL queries that works with unmodified @persistent@ SQL backends.  Its language closely resembles SQL, so you don't have to learn new concepts, just new syntax, and it's fairly easy to predict the generated SQL and optimize it for your backend. Most kinds of errors committed when writing SQL are caught as compile-time errors---although it is possible to write type-checked @esqueleto@ queries that fail at runtime.
                 .
@@ -37,7 +37,7 @@ library
     , bytestring
     , conduit >=1.3
     , monad-logger
-    , persistent >=2.8.0 && <2.9
+    , persistent >=2.8.0 && <2.10
     , resourcet >=1.2
     , tagged >=0.2
     , text >=0.11 && <1.3
@@ -78,7 +78,7 @@ test-suite mysql
     , monad-logger
     , mysql
     , mysql-simple
-    , persistent >=2.8.0 && <2.9
+    , persistent >=2.8.0 && <2.10
     , persistent-mysql
     , persistent-template
     , resourcet >=1.2
@@ -108,7 +108,7 @@ test-suite postgresql
     , esqueleto
     , hspec
     , monad-logger
-    , persistent >=2.8.0 && <2.9
+    , persistent >=2.8.0 && <2.10
     , persistent-postgresql
     , persistent-template
     , postgresql-libpq
@@ -140,7 +140,7 @@ test-suite sqlite
     , esqueleto
     , hspec
     , monad-logger
-    , persistent >=2.8.0 && <2.9
+    , persistent >=2.8.0 && <2.10
     , persistent-sqlite
     , persistent-template
     , resourcet >=1.2
